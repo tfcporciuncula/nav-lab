@@ -1,0 +1,21 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    google()
+  }
+  dependencies {
+    classpath libs.gradle.agp
+    classpath libs.gradle.kotlin
+    classpath libs.gradle.hilt
+  }
+}
+
+ext.buildConfig = [
+  'compileSdk': 31,
+  'minSdk'    : 23,
+  'targetSdk' : 31,
+]
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

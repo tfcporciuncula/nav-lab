@@ -1,0 +1,21 @@
+[versions]
+agp = '7.0.3'
+androidx-activity = '1.4.0'
+androidx-appCompat = '1.4.0'
+androidx-core = '1.7.0'
+dagger = '2.40.1'
+kotlin = '1.5.31'
+kotlin-coroutines = '1.5.2'
+material = '1.4.0'
+
+[libraries]
+androidx-core = { module = 'androidx.core:core-ktx', version.ref = 'androidx-core' }
+androidx-appCompat = { module = 'androidx.appcompat:appcompat', version.ref = 'androidx-appCompat' }
+gradle-agp = { module = 'com.android.tools.build:gradle', version.ref = 'agp' }
+gradle-hilt = { module = 'com.google.dagger:hilt-android-gradle-plugin', version.ref = 'dagger' }
+gradle-kotlin = { module = 'org.jetbrains.kotlin:kotlin-gradle-plugin', version.ref = 'kotlin' }
+hilt-android = { module = 'com.google.dagger:hilt-android', version.ref = 'dagger' }
+hilt-compiler = { module = 'com.google.dagger:hilt-compiler', version.ref = 'dagger' }
+kotlin-coroutines-android = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-android', version.ref = 'kotlin-coroutines' }
+kotlin-coroutines-core = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-core', version.ref = 'kotlin-coroutines' }
+material = { module = 'com.google.android.material:material', version.ref = 'material' }
