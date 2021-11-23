@@ -2,6 +2,7 @@
 <navigation
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/nav_graph"
   app:startDestination="@id/launcherFragment"
   >
@@ -10,6 +11,49 @@
     android:id="@+id/launcherFragment"
     android:name="de.climatelabs.klima.android.navlab.LauncherFragment"
     android:label="LauncherFragment"
+    tools:layout="@layout/launcher"
+    />
+
+  <fragment
+    android:id="@+id/fragmentA"
+    android:name="de.climatelabs.klima.android.navlab.FragmentA"
+    android:label="FragmentA"
+    tools:layout="@layout/a"
+    />
+
+  <fragment
+    android:id="@+id/fragmentA2"
+    android:name="de.climatelabs.klima.android.navlab.FragmentA2"
+    android:label="FragmentA2"
+    tools:layout="@layout/a2"
+    />
+
+  <fragment
+    android:id="@+id/fragmentB"
+    android:name="de.climatelabs.klima.android.navlab.FragmentB"
+    android:label="FragmentB"
+    tools:layout="@layout/b"
+    />
+
+  <fragment
+    android:id="@+id/fragmentB2"
+    android:name="de.climatelabs.klima.android.navlab.FragmentB2"
+    android:label="FragmentB2"
+    tools:layout="@layout/b2"
+    />
+
+  <fragment
+    android:id="@+id/fragmentC"
+    android:name="de.climatelabs.klima.android.navlab.FragmentC"
+    android:label="FragmentC"
+    tools:layout="@layout/c"
+    />
+
+  <fragment
+    android:id="@+id/fragmentC2"
+    android:name="de.climatelabs.klima.android.navlab.FragmentC2"
+    android:label="FragmentC2"
+    tools:layout="@layout/c2"
     />
 
 </navigation>
