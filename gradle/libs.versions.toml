@@ -3,6 +3,7 @@ agp = '7.0.3'
 androidx-activity = '1.4.0'
 androidx-appCompat = '1.4.0'
 androidx-core = '1.7.0'
+androidx-navigation = '2.3.5'
 dagger = '2.40.1'
 kotlin = '1.5.31'
 kotlin-coroutines = '1.5.2'
@@ -11,6 +12,8 @@ material = '1.4.0'
 [libraries]
 androidx-core = { module = 'androidx.core:core-ktx', version.ref = 'androidx-core' }
 androidx-appCompat = { module = 'androidx.appcompat:appcompat', version.ref = 'androidx-appCompat' }
+androidx-navigation-fragment = { module = 'androidx.navigation:navigation-fragment-ktx', version.ref = 'androidx-navigation' }
+androidx-navigation-ui = { module = 'androidx.navigation:navigation-ui-ktx', version.ref = 'androidx-navigation' }
 gradle-agp = { module = 'com.android.tools.build:gradle', version.ref = 'agp' }
 gradle-hilt = { module = 'com.google.dagger:hilt-android-gradle-plugin', version.ref = 'dagger' }
 gradle-kotlin = { module = 'org.jetbrains.kotlin:kotlin-gradle-plugin', version.ref = 'kotlin' }

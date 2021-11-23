@@ -39,6 +39,8 @@ android {
 dependencies {
   implementation libs.androidx.core
   implementation libs.androidx.appCompat
+  implementation libs.androidx.navigation.fragment
+  implementation libs.androidx.navigation.ui
   implementation libs.kotlin.coroutines.core
   implementation libs.kotlin.coroutines.android
   implementation libs.material
