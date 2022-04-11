@@ -1,19 +1,33 @@
 [versions]
 agp = '7.1.3'
+accompanist = '0.23.1'
 androidx-activity = '1.4.0'
 androidx-appCompat = '1.4.1'
 androidx-core = '1.7.0'
 androidx-navigation = '2.4.2'
+compose = '1.1.1'
 dagger = '2.41'
+exoplayer = '2.17.1'
 kotlin = '1.6.10'
 kotlin-coroutines = '1.6.0'
 material = '1.5.0'
 
 [libraries]
+accompanist-insets = { module = 'com.google.accompanist:accompanist-insets', version.ref = 'accompanist' }
 androidx-core = { module = 'androidx.core:core-ktx', version.ref = 'androidx-core' }
 androidx-appCompat = { module = 'androidx.appcompat:appcompat', version.ref = 'androidx-appCompat' }
 androidx-navigation-fragment = { module = 'androidx.navigation:navigation-fragment-ktx', version.ref = 'androidx-navigation' }
 androidx-navigation-ui = { module = 'androidx.navigation:navigation-ui-ktx', version.ref = 'androidx-navigation' }
+compose-activity = { module = 'androidx.activity:activity-compose', version.ref = 'compose' }
+compose-animation = { module = 'androidx.compose.animation:animation', version.ref = 'compose' }
+compose-foundation = { module = 'androidx.compose.foundation:foundation', version.ref = 'compose' }
+compose-material = { module = 'androidx.compose.material:material', version.ref = 'compose' }
+compose-navigation = { module = 'androidx.navigation:navigation-compose', version.ref = 'androidx-navigation' }
+compose-ui = { module = 'androidx.compose.ui:ui', version.ref = 'compose' }
+compose-uiTooling = { module = 'androidx.compose.ui:ui-tooling', version.ref = 'compose' }
+exoplayer-core = { module = 'com.google.android.exoplayer:exoplayer-core', version.ref = 'exoplayer' }
+exoplayer-ui = { module = 'com.google.android.exoplayer:exoplayer-ui', version.ref = 'exoplayer' }
+exoplayer-hls = { module = 'com.google.android.exoplayer:exoplayer-hls', version.ref = 'exoplayer' }
 gradle-agp = { module = 'com.android.tools.build:gradle', version.ref = 'agp' }
 gradle-hilt = { module = 'com.google.dagger:hilt-android-gradle-plugin', version.ref = 'dagger' }
 gradle-kotlin = { module = 'org.jetbrains.kotlin:kotlin-gradle-plugin', version.ref = 'kotlin' }
@@ -22,3 +36,15 @@ hilt-compiler = { module = 'com.google.dagger:hilt-compiler', version.ref = 'dag
 kotlin-coroutines-android = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-android', version.ref = 'kotlin-coroutines' }
 kotlin-coroutines-core = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-core', version.ref = 'kotlin-coroutines' }
 material = { module = 'com.google.android.material:material', version.ref = 'material' }
+
+[bundles]
+compose = [
+  'compose-ui',
+  'compose-uiTooling',
+  'compose-foundation',
+  'compose-animation',
+  'compose-material',
+  'compose-activity',
+#  'compose-navigation',
+]
+exoplayer = ['exoplayer-core', 'exoplayer-ui', 'exoplayer-hls']
