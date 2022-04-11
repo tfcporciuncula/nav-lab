@@ -10,7 +10,7 @@ import de.climatelabs.klima.android.navlab.databinding.BBinding
 
 class FragmentB : Fragment() {
 
-  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
     val binding = BBinding.inflate(inflater, container, false)
     binding.screen.setOnClickListener {
       findNavController().navigate(R.id.fragmentB2)

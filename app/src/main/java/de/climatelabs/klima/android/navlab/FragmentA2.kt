@@ -9,7 +9,7 @@ import de.climatelabs.klima.android.navlab.databinding.A2Binding
 
 class FragmentA2 : Fragment() {
 
-  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
     val binding = A2Binding.inflate(inflater, container, false)
     binding.screen.setOnClickListener {
     }
